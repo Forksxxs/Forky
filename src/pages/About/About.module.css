@@ -38,12 +38,13 @@
   border-radius: var(--radius-md);
   box-shadow: 4px 6px 12px var(--color-shadow);
   border: 3px solid white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-handwritten);
-  color: var(--color-text-muted);
-  font-size: 0.9rem;
+  overflow: hidden;
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .photo:nth-child(1) {
@@ -51,7 +52,7 @@
 }
 
 .photo:nth-child(2) {
-  transform: rotate(1.5deg);
+  transform: rotate(1.5deg) scale(1.12);
   margin-top: var(--space-lg);
 }
 

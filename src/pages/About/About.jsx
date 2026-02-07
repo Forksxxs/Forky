@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom'
 import styles from './About.module.css'
+import photo1 from '../../assets/photos/shirly-1.png'
+import photo2 from '../../assets/photos/shirly-2.jpg'
 
 export default function About() {
   return (
@@ -9,8 +11,12 @@ export default function About() {
 
       <div className={styles.content}>
         <div className={styles.photoGrid}>
-          <div className={styles.photo}>photo 1</div>
-          <div className={styles.photo}>photo 2</div>
+          <div className={styles.photo}>
+            <img src={photo1} alt="Shirly Dahan" />
+          </div>
+          <div className={styles.photo}>
+            <img src={photo2} alt="Shirly Dahan" />
+          </div>
         </div>
 
         <div className={styles.bio}>
