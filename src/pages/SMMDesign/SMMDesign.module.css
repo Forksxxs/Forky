@@ -1,0 +1,67 @@
+.page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: var(--space-lg);
+}
+
+.header {
+  margin-bottom: var(--space-xl);
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
+  margin-bottom: var(--space-xs);
+}
+
+.subtitle {
+  color: var(--color-text-muted);
+  font-size: 1rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--space-lg);
+}
+
+.posterCard {
+  background: var(--color-card-bg);
+  border-radius: var(--radius-lg);
+  border: 2px solid var(--color-border);
+  box-shadow: 4px 6px 14px var(--color-shadow);
+  overflow: hidden;
+  transition: var(--transition-normal);
+}
+
+.posterCard:hover {
+  transform: translateY(-4px) rotate(1deg);
+  box-shadow: 6px 8px 20px var(--color-shadow);
+}
+
+.posterImage {
+  aspect-ratio: 1 / 1;
+  background: linear-gradient(135deg, var(--color-bg), var(--color-border));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-handwritten);
+  color: var(--color-text-muted);
+}
+
+.posterInfo {
+  padding: var(--space-md);
+}
+
+.posterTitle {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: var(--space-xs);
+}
+
+.posterDesc {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}

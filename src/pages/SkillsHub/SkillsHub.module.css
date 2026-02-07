@@ -1,0 +1,116 @@
+.skillsHub {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: var(--space-lg);
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 3rem);
+  text-align: center;
+  margin-bottom: var(--space-sm);
+}
+
+.highlight {
+  font-family: var(--font-handwritten);
+  color: var(--color-accent);
+  font-size: 1.1em;
+}
+
+.subtitle {
+  text-align: center;
+  color: var(--color-text-muted);
+  font-size: 1rem;
+  margin-bottom: var(--space-xl);
+}
+
+.designSub {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-top: var(--space-xl);
+  padding-top: var(--space-xl);
+  border-top: 2px dashed var(--color-border);
+}
+
+.designLabel {
+  font-family: var(--font-handwritten);
+  font-size: 1.3rem;
+  color: var(--color-text-muted);
+}
+
+.designLinks {
+  display: flex;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.designLink {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  padding: var(--space-sm) var(--space-lg);
+  background: var(--color-card-bg);
+  border: 2px solid var(--color-border);
+  border-radius: 50px;
+  transition: var(--transition-normal);
+}
+
+.designLink:hover {
+  background: var(--color-accent);
+  color: white;
+  border-color: var(--color-accent);
+  transform: translateY(-2px);
+}
+
+.toolsSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-top: var(--space-lg);
+  padding-top: var(--space-lg);
+  border-top: 2px dashed var(--color-border);
+}
+
+.toolsGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  justify-content: center;
+  max-width: 600px;
+}
+
+.toolTag {
+  font-size: 0.85rem;
+  padding: 4px 14px;
+  background: var(--color-ghost);
+  border: 1.5px solid var(--color-border);
+  border-radius: 50px;
+  color: var(--color-text-muted);
+  transition: var(--transition-fast);
+}
+
+.toolTag:hover {
+  background: var(--color-accent);
+  color: white;
+  border-color: var(--color-accent);
+}
+
+.wrapLink {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-family: var(--font-handwritten);
+  font-size: 1.3rem;
+  color: var(--color-accent);
+  margin-top: var(--space-xl);
+  justify-content: center;
+  width: 100%;
+  transition: var(--transition-fast);
+}
+
+.wrapLink:hover {
+  transform: translateX(6px);
+}

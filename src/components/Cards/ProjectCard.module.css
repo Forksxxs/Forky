@@ -1,0 +1,63 @@
+.card {
+  background: var(--color-card-bg);
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 4px 6px 14px var(--color-shadow);
+  transition: var(--transition-normal);
+}
+
+.card:hover {
+  transform: translateY(-4px) rotate(-0.5deg);
+  box-shadow: 6px 8px 20px var(--color-shadow);
+}
+
+.imageWrapper {
+  aspect-ratio: 16 / 10;
+  background: linear-gradient(135deg, var(--color-bg), var(--color-border));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-handwritten);
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+  overflow: hidden;
+}
+
+.imageWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.body {
+  padding: var(--space-md);
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: var(--space-xs);
+}
+
+.description {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  line-height: 1.5;
+  margin-bottom: var(--space-md);
+}
+
+.cta {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  font-family: var(--font-handwritten);
+  font-size: 1.1rem;
+  color: var(--color-accent);
+  transition: var(--transition-fast);
+}
+
+.cta:hover {
+  transform: translateX(4px);
+}

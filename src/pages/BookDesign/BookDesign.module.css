@@ -1,0 +1,33 @@
+.page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: var(--space-lg);
+  overflow: hidden;
+}
+
+.header {
+  margin-bottom: var(--space-xl);
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
+  margin-bottom: var(--space-xs);
+}
+
+.subtitle {
+  color: var(--color-text-muted);
+  font-size: 1rem;
+}
+
+.hint {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-family: var(--font-handwritten);
+  font-size: 1.1rem;
+  color: var(--color-text-muted);
+  margin-top: var(--space-lg);
+  justify-content: center;
+}

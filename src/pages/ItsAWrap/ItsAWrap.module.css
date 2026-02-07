@@ -1,0 +1,117 @@
+.page {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: var(--space-lg);
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.ghost {
+  width: 140px;
+  height: 140px;
+  margin-bottom: var(--space-lg);
+}
+
+.ghostBody {
+  width: 120px;
+  height: 120px;
+  background: var(--color-card-bg);
+  border-radius: 60px 60px 30px 30px;
+  border: 3px solid var(--color-text);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  box-shadow: 4px 6px 16px var(--color-shadow);
+  margin: 0 auto;
+}
+
+.ghostEyes {
+  display: flex;
+  gap: 16px;
+}
+
+.ghostEye {
+  width: 10px;
+  height: 10px;
+  background: var(--color-text);
+  border-radius: 50%;
+}
+
+.ghostSmile {
+  width: 20px;
+  height: 10px;
+  border-bottom: 3px solid var(--color-text);
+  border-radius: 0 0 50% 50%;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  font-weight: 700;
+  margin-bottom: var(--space-sm);
+}
+
+.subtitle {
+  font-family: var(--font-handwritten);
+  font-size: 1.4rem;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-xl);
+}
+
+.contactList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  width: 100%;
+  max-width: 360px;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-md) var(--space-lg);
+  background: var(--color-card-bg);
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: 3px 4px 10px var(--color-shadow);
+  transition: var(--transition-normal);
+  text-decoration: none;
+}
+
+.contactItem:hover {
+  transform: translateY(-2px);
+  border-color: var(--color-accent);
+  box-shadow: 4px 6px 14px var(--color-shadow);
+}
+
+.contactIcon {
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+
+.contactLabel {
+  font-family: var(--font-body);
+  font-size: 1rem;
+}
+
+.location {
+  margin-top: var(--space-lg);
+  font-family: var(--font-handwritten);
+  font-size: 1.1rem;
+  color: var(--color-text-muted);
+  letter-spacing: 0.03em;
+}
+
+.footer {
+  margin-top: var(--space-2xl);
+  font-family: var(--font-handwritten);
+  font-size: 1.1rem;
+  color: var(--color-text-muted);
+}

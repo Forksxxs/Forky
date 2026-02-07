@@ -1,0 +1,81 @@
+.carousel {
+  display: flex;
+  gap: var(--space-lg);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding: var(--space-md) var(--space-sm);
+  margin: 0 calc(-1 * var(--space-lg));
+  padding-left: var(--space-lg);
+  padding-right: var(--space-lg);
+}
+
+.carousel::-webkit-scrollbar {
+  height: 6px;
+}
+
+.carousel::-webkit-scrollbar-track {
+  background: var(--color-border);
+  border-radius: 3px;
+}
+
+.carousel::-webkit-scrollbar-thumb {
+  background: var(--color-accent);
+  border-radius: 3px;
+}
+
+.item {
+  flex: 0 0 260px;
+  scroll-snap-align: center;
+}
+
+.imageWrapper {
+  aspect-ratio: 3 / 4;
+  background: linear-gradient(135deg, var(--color-card-bg), var(--color-border));
+  border-radius: var(--radius-lg);
+  border: 3px solid white;
+  box-shadow: 4px 6px 14px var(--color-shadow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-handwritten);
+  color: var(--color-text-muted);
+  overflow: hidden;
+}
+
+.imageWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.caption {
+  margin-top: var(--space-sm);
+  text-align: center;
+}
+
+.captionTitle {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.captionDesc {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  margin-top: var(--space-xs);
+}
+
+.item:nth-child(odd) .imageWrapper {
+  transform: rotate(-2deg);
+}
+
+.item:nth-child(even) .imageWrapper {
+  transform: rotate(1.5deg);
+}
+
+@media (min-width: 768px) {
+  .item {
+    flex: 0 0 300px;
+  }
+}

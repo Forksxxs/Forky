@@ -1,0 +1,71 @@
+/* ===== Design Tokens — Ghost Theme ===== */
+:root {
+  /* Colors — ethereal ghost palette */
+  --color-bg: #EEEAF4;
+  --color-bg-light: #F8F6FC;
+  --color-text: #2D2640;
+  --color-text-muted: #6E6482;
+  --color-accent: #8B7EC8;
+  --color-accent-hover: #7468B0;
+  --color-accent-soft: rgba(139, 126, 200, 0.12);
+  --color-card-bg: #F9F7FE;
+  --color-shadow: rgba(45, 38, 64, 0.1);
+  --color-shadow-lg: rgba(45, 38, 64, 0.18);
+  --color-border: #D5CFE6;
+  --color-ghost: #F0ECF8;
+  --color-ghost-eyes: #2D2640;
+  --color-glow: rgba(139, 126, 200, 0.25);
+  --color-mint: rgba(134, 197, 181, 0.15);
+  --color-blush: rgba(200, 150, 170, 0.12);
+
+  /* Fonts */
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-handwritten: 'Caveat', cursive;
+  --font-body: 'Inter', system-ui, sans-serif;
+
+  /* Spacing */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
+  --space-2xl: 5rem;
+
+  /* Border Radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-normal: 300ms ease;
+}
+
+/* ===== Reset ===== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+button { cursor: pointer; border: none; background: none; font: inherit; color: inherit; }
+ul, ol { list-style: none; }
+
