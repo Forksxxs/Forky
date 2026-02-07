@@ -228,14 +228,6 @@ export default function BugReportCaseStudy() {
         >
           Live Demo
         </a>
-        <a
-          href="https://github.com/Forksxxs/bug-report-generator"
-          target="_blank"
-          rel="noopener noreferrer"
-          className={`${styles.ctaBtn} ${styles.ctaSecondary}`}
-        >
-          Source Code
-        </a>
       </div>
     </div>
   )

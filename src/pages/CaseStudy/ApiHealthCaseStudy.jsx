@@ -268,14 +268,6 @@ export default function ApiHealthCaseStudy() {
         >
           Live Demo
         </a>
-        <a
-          href="https://github.com/Forksxxs/api-health-monitor"
-          target="_blank"
-          rel="noopener noreferrer"
-          className={`${styles.ctaBtn} ${styles.ctaSecondary}`}
-        >
-          Source Code
-        </a>
       </div>
     </div>
   )
