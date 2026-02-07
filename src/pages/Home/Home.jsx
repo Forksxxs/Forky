@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import styles from './Home.module.css'
+import heroPhoto from '../../assets/photos/shirly-1.png'
 
 const random = (min, max) => Math.floor(min + Math.random() * (max - min))
 
@@ -51,14 +52,7 @@ export default function Home() {
             onClick={() => setBlobRadius(generateBlob())}
           >
             <div className={styles.blobInner}>
-              {/* Big ghost face inside the blob */}
-              <div className={styles.heroBigGhost}>
-                <div className={styles.bigGhostEyes}>
-                  <span className={styles.bigEye} />
-                  <span className={styles.bigEye} />
-                </div>
-                <div className={styles.bigGhostMouth} />
-              </div>
+              <img src={heroPhoto} alt="Shirly Dahan" className={styles.heroPhoto} />
             </div>
           </div>
         </div>
