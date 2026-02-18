@@ -1,4 +1,5 @@
 import ImageCarousel from '../../components/Gallery/ImageCarousel'
+import UnderConstruction from '../../components/UnderConstruction/UnderConstruction'
 import { bookDesignProjects } from '../../data/projects'
 import styles from './BookDesign.module.css'
 
@@ -10,11 +11,16 @@ export default function BookDesign() {
         <p className={styles.subtitle}>Book covers, layouts, and editorial design.</p>
       </div>
 
-      <ImageCarousel items={bookDesignProjects} />
-
-      <p className={styles.hint}>
-        <span>&larr;</span> Scroll to explore <span>&rarr;</span>
-      </p>
+      {bookDesignProjects.length === 0 ? (
+        <UnderConstruction />
+      ) : (
+        <>
+          <ImageCarousel items={bookDesignProjects} />
+          <p className={styles.hint}>
+            <span>&larr;</span> Scroll to explore <span>&rarr;</span>
+          </p>
+        </>
+      )}
     </div>
   )
 }

@@ -1,4 +1,5 @@
 import ProjectCard from '../../components/Cards/ProjectCard'
+import UnderConstruction from '../../components/UnderConstruction/UnderConstruction'
 import { webDesignProjects } from '../../data/projects'
 import styles from './WebDesigns.module.css'
 
@@ -10,11 +11,15 @@ export default function WebDesigns() {
         <p className={styles.subtitle}>Website design projects — layouts, UI, and visual concepts.</p>
       </div>
 
-      <div className={styles.grid}>
-        {webDesignProjects.map((project) => (
-          <ProjectCard key={project.id} {...project} />
-        ))}
-      </div>
+      {webDesignProjects.length === 0 ? (
+        <UnderConstruction />
+      ) : (
+        <div className={styles.grid}>
+          {webDesignProjects.map((project) => (
+            <ProjectCard key={project.id} {...project} />
+          ))}
+        </div>
+      )}
     </div>
   )
 }

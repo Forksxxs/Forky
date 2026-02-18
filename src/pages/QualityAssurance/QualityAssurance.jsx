@@ -1,4 +1,5 @@
 import ProjectCard from '../../components/Cards/ProjectCard'
+import UnderConstruction from '../../components/UnderConstruction/UnderConstruction'
 import { qaProjects } from '../../data/projects'
 import styles from './QualityAssurance.module.css'
 
@@ -10,11 +11,15 @@ export default function QualityAssurance() {
         <p className={styles.subtitle}>QA case studies — testing strategies, bug tracking, and documentation.</p>
       </div>
 
-      <div className={styles.grid}>
-        {qaProjects.map((project) => (
-          <ProjectCard key={project.id} {...project} />
-        ))}
-      </div>
+      {qaProjects.length === 0 ? (
+        <UnderConstruction />
+      ) : (
+        <div className={styles.grid}>
+          {qaProjects.map((project) => (
+            <ProjectCard key={project.id} {...project} />
+          ))}
+        </div>
+      )}
     </div>
   )
 }
